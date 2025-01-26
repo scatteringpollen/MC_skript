@@ -1,3 +1,7 @@
+#서버 내에서 귓속말을 보내는 명령어 입니다.
+#/귓 <player> <할 말> 형식으로 사용할 수 있습니다.
+#귓속말을 받은 상대는 타이틀과 알림(띵)을 받게 됩니다.
+
 command /귓 [<player>] [<text>]:
 	trigger:
 		if arg 1 is not set:
