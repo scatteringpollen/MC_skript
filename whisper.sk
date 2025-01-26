@@ -1,0 +1,19 @@
+command /귓 [<player>] [<text>]:
+	trigger:
+		if arg 1 is not set:
+			message ""
+			message "[&a서버&f] : 귓속말할 상대를 정해주세요!"
+			message "" 
+			stop
+			
+		if arg 2 is not set:
+			message ""
+			message "[&a서버&f] : %arg-1%님께 할 말을 작성해주세요!"
+			message ""
+			stop
+			
+		else:
+			execute player command "/w %arg-1% %arg-2%"
+			execute console command "/playsound minecraft:entity.experience_orb.pickup player %arg-1% ~ ~ ~ 1 1 1"
+			execute console command "/title %arg-1% title {""text"":""[&a서버&f]""}"
+			execute console command "/title %arg-1% subtitle {""text"":""귓속말이 도착했습니다!"",""color"":""white""}"
