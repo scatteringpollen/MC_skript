@@ -1,0 +1,4 @@
+
+every 3 seconds:
+	loop all players:
+		set tab header to "                                                                                                                                   %nl% 루솜&a&l서버에 오신걸 환영합니다! %nl%" and footer to "%nl% &3&l현재 시각: %now% %nl% &f서버 접속자 수: &e%number of all players% %nl% &f서버 주소: &b&llusomserver.kro.kr %nl%" for loop-players 
